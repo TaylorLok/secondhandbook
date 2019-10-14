@@ -1,4 +1,11 @@
 package service.user;
 
-public interface SellerService {
+import domain.user.Seller;
+import service.IService;
+
+import java.util.List;
+
+public interface SellerService extends IService<Seller,String>
+{
+    List<Seller>getAll();
 }
