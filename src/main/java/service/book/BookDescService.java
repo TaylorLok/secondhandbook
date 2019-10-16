@@ -8,4 +8,6 @@ import java.util.List;
 public interface BookDescService extends IService<BookDesc,String>
 {
     List<BookDesc> getAll();
+
+    BookDesc retrieveByDesc(String author);
 }

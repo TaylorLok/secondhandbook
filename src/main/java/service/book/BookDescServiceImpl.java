@@ -30,22 +30,32 @@ public class BookDescServiceImpl implements BookDescService
     }
 
     @Override
-    public BookDesc create(BookDesc type) {
-        return null;
+    public BookDesc create(BookDesc bookDesc) {
+        return this.bookDescRepository.save(bookDesc);
     }
 
     @Override
-    public BookDesc update(BookDesc type) {
-        return null;
+    public BookDesc update(BookDesc bookDesc) {
+        return this.bookDescRepository.save(bookDesc);
     }
 
     @Override
     public void delete(BookDesc id) {
-
+       this.bookDescRepository.delete(id);
     }
 
     @Override
     public BookDesc read(BookDesc id) {
+        return this.bookDescRepository.save(id);
+    }
+    @Override
+    public BookDesc retrieveByDesc(String author)
+    {
+        List<BookDesc> bookDescs = getAll();
+        for(BookDesc bookDesc:bookDescs){
+            if(bookDesc.getAuthor().equalsIgnoreCase(author))
+                return bookDesc;
+        }
         return null;
     }
 }
