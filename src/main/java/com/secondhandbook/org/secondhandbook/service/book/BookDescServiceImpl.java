@@ -21,6 +21,7 @@ public class BookDescServiceImpl implements BookDescService
         return service;
     }
 
+    @SuppressWarnings("SpringJavaAutowiredFieldsWarningInspection")
     @Autowired
     BookDescRepository bookDescRepository;
 

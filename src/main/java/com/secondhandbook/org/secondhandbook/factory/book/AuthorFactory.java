@@ -4,12 +4,11 @@ import com.secondhandbook.org.secondhandbook.domain.book.Author;
 
 public class AuthorFactory
 {
-    public static Author getAuthor(String name,String bio,String authorRegNum)
+    public static Author getAuthor(String name,String bio)
     {
         return new Author.Builder()
                          .name(name)
                          .bio(bio)
-                         .authorRegNum(authorRegNum)
                          .build();
     }
 }

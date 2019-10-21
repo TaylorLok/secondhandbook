@@ -13,6 +13,7 @@ import org.springframework.web.bind.annotation.RequestMapping;
 import org.springframework.web.bind.annotation.RestController;
 import com.secondhandbook.org.secondhandbook.service.book.BookDescServiceImpl;
 
+@SuppressWarnings("SpringJavaAutowiredFieldsWarningInspection")
 @RestController
 @RequestMapping("/secondhandbook/bookDesc")
 public class BookDescController

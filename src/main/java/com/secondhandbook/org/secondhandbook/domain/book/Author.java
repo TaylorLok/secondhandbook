@@ -1,9 +1,12 @@
 package com.secondhandbook.org.secondhandbook.domain.book;
 
+import org.springframework.boot.test.autoconfigure.data.jdbc.DataJdbcTest;
+
 import javax.persistence.*;
 import java.util.Objects;
 
 @Entity
+@DataJdbcTest
 public class Author
 {
     @Column(name = "name",columnDefinition = "VARCHAR(35)",nullable = false)
@@ -11,6 +14,7 @@ public class Author
     @Column(name = "bio",columnDefinition = "VARCHAR(100)",nullable = false)
     private String bio;
     @Id
+    @GeneratedValue(strategy = GenerationType.AUTO)
     @Column(name = "authorRegNum",columnDefinition = "VARCHAR(35)",nullable = false)
     private String authorRegNum;
 

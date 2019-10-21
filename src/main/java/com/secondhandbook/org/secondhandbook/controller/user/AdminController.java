@@ -17,6 +17,7 @@ import com.secondhandbook.org.secondhandbook.service.user.AdminServiceImpl;
 @RequestMapping("/secondhandbook/admin")
 public class AdminController
 {
+    @SuppressWarnings("SpringJavaAutowiredFieldsWarningInspection")
     @Autowired
     private AdminServiceImpl adminService;
 

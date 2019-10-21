@@ -19,6 +19,7 @@ public class AdminServiceImpl implements AdminService {
 
     }
 
+    @SuppressWarnings("SpringJavaAutowiredFieldsWarningInspection")
     @Autowired
     AdminRepository adminRepository;
 

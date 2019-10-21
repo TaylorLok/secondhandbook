@@ -20,6 +20,7 @@ public class SellerServiceImpl implements SellerService
         return service;
     }
 
+    @SuppressWarnings("SpringJavaAutowiredFieldsWarningInspection")
     @Autowired
     SellerRepository SellerRepository;
 

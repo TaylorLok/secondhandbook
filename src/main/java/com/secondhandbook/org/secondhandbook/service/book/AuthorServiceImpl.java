@@ -20,6 +20,7 @@ public class AuthorServiceImpl implements AuthorService
         return service;
     }
 
+     @SuppressWarnings("SpringJavaAutowiredFieldsWarningInspection")
      @Autowired
     AuthorRepository authorRepository;
 

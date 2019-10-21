@@ -20,6 +20,7 @@ public class BuyerServiceImpl implements BuyerService
         return service;
     }
 
+    @SuppressWarnings("SpringJavaAutowiredFieldsWarningInspection")
     @Autowired
     BuyerRepository buyerRepository;
 

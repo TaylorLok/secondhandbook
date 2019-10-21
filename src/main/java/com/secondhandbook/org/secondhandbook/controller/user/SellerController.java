@@ -17,6 +17,7 @@ import com.secondhandbook.org.secondhandbook.service.user.SellerServiceImpl;
 @RequestMapping("/secondhandbook/seller")
 public class SellerController
 {
+    @SuppressWarnings("SpringJavaAutowiredFieldsWarningInspection")
     @Autowired
     SellerServiceImpl sellerService;
 
